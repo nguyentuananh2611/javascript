@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <script>
+        var a = 3;
+        var x = "3";
+        var y = "4";
+        var z = + y;
+        var d = new Date();
+        document.getElementById("demo1").innerHTML = Number(x);
+        document.getElementById("demo2").innerHTML = typeof z;
+        document.getElementById("demo3").innerHTML = String(a);
+        document.getElementById("demo4").innerHTML = Number(d);
+        document.getElementById("demo5").innerHTML = String(d);
+        document.getElementById("demo6").innerHTML = Number(true) + " " + Number(false);
+        document.getElementById("demo7").innerHTML = String(true) + " " + String(false);
+        document.getElementById("demo8").innerHTML = 
+        (5 + null) + "<br>" + (5 + "2") + "<br>" + (5 - "2") + "<br>" + (5*"2") + "<br>" + (5/"2") + "<br>" + (5%"2");
+    </script>
+</body>
+</html>

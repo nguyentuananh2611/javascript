@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <script>
+      var a = 3;
+      var b = 4;
+      var car = "Volvo";
+      const name = { fname: "Nguyen", lname: "Tuan Anh" };
+      var color = ["red", "blue"];
+      document.getElementById("demo1").innerHTML =
+        typeof a +
+        "<br>" +
+        typeof b +
+        "<br>" +
+        typeof car +
+        "<br>" +
+        typeof color +
+        "<br>" +
+        typeof name;
+      var c;
+      document.getElementById("demo2").innerHTML =
+        typeof c + "<br>" + typeof true;
+      function myFunction() {}
+      document.getElementById("demo3").innerHTML =
+        typeof ham + "<br>" + typeof null;
+      function myFunction(e) {
+        return e.constructor === Array;
+      }
+      document.getElementById("demo4").innerHTML = myFunction(color);
+      let x;
+      document.getElementById("demo5").innerHTML = x;
+      var space = " ";
+      document.getElementById("demo6").innerHTML = typeof space;
+      var y = null;
+      document.getElementById("demo7").innerHTML = typeof y;
+      document.getElementById("demo8").innerHTML =
+        typeof undefined +
+        "<br>" +
+        typeof null +
+        "<br>" +
+        (null === undefined) +
+        "<br>" +
+        (null == undefined);
+      document.getElementById("demo9").innerHTML =
+        (color instanceof Array) + "<br>" + (color instanceof String);
+    </script>
+  </body>
+</html>

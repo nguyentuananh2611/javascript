@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <script>
+        var a = 3;
+        var b = 4;
+        var pet = "cat";
+        document.getElementById("demo1").innerHTML = a+b+pet;
+        let x = 3;
+        x = 4;
+        x = "test";
+        document.getElementById("demo2").innerHTML = x;
+        let info = "He is called 'Tung Son'";
+        document.getElementById("demo3").innerHTML = info;
+        var c = 5.0;
+        document.getElementById("demo4").innerHTML = c;
+        let y = 2e1;
+        document.getElementById("demo5").innerHTML = y;
+        var z = BigInt("999999999999999999999999999999999999");
+        document.getElementById("demo6").innerHTML = z;
+        document.getElementById("demo7").innerHTML = (a<b) + "</br>" + (a>b);
+        var color = ["red", "blue"];
+        document.getElementById("demo8").innerHTML = color[1];
+        const name = {fname: "Nguyen", lname: "Tuan Anh"};
+        document.getElementById("demo9").innerHTML = name.fname + " " + name.lname;
+        document.getElementById("demo10").innerHTML = typeof a + "<br>" + typeof x;
+        var car = undefined;
+        document.getElementById("demo11").innerHTML = car;
+        var space = " ";
+        document.getElementById("demo12").innerHTML = name.fname + space + name.lname;
+    </script>
+</body>
+</html>
