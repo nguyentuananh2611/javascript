@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Invocation</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+      function demo(a, b) {
+        return a + b;
+      }
+      document.querySelector("#demo").innerHTML = demo(1, 2);
+
+      let x = myFunction();
+      function myFunction() {
+        return this;
+      }
+      document.getElementById("demo1").innerHTML = x;
+
+      const myObject = {
+        firstName: "John",
+        lastName: "Doe",
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+      document.getElementById("demo2").innerHTML = myObject.fullName();
+
+      function myFunc(arg1, arg2) {
+        this.firstName = arg1;
+        this.lastName = arg2;
+      }
+
+      const myObj = new myFunc("John", "Doe");
+      document.getElementById("demo3").innerHTML = myObj.firstName;
+    </script>
+  </body>
+</html>

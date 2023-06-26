@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Apply</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+      const person = {
+        fullName: function () {
+          return this.firstName + " " + this.lastName;
+        },
+      };
+
+      const person1 = {
+        firstName: "John",
+        lastName: "Doe",
+      };
+
+      document.getElementById("demo").innerHTML =
+        person.fullName.apply(person1);
+
+      const employee = {
+        fullName: function (city, country) {
+          return (
+            this.firstName + " " + this.lastName + "," + city + "," + country
+          );
+        },
+      };
+
+      const employee1 = {
+        firstName: "John",
+        lastName: "Doe",
+      };
+
+      document.getElementById("demo1").innerHTML = employee.fullName.apply(
+        employee1,
+        ["Oslo", "Norway"]
+      );
+    </script>
+  </body>
+</html>
